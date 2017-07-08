@@ -20,7 +20,7 @@ app.post('/crs',(req,res) => {
     // _creator:req.user._id
 
   });
-  todo.save().then((doc) => {
+  crsData.save().then((doc) => {
     res.send(doc);
   },(e) => {
     res.status(400).send(e);
